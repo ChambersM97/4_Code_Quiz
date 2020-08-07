@@ -19,7 +19,7 @@ nextButton.addEventListener('click', () => {
 
 function startGame() {
     startButton.classList.add('hide')
-    shuffledQuestions = questions.sort(() => Math.random() = .5)
+    shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
     setNextQuestion()
@@ -59,6 +59,12 @@ function selectAnswer(e) {
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+        nextButton.classList.remove('hide')
+    } else {
+      startButton.innerText = 'Restart'
+      startButton.classList.remove('hide')
+    }
 }
 
 function setStatusClass(element, correct) {
@@ -76,14 +82,14 @@ function clearStatusClass(element) {
 }
 
 const questions = [
-    {
-        question: "What is Bob's favorite hardware store?",
+        
+        { question: "What is Bob's favorite hardware store?",
         answers: [
             { text: 'Home Depot', correct: true},
-            { text: 'Lowes', correct: false}
-        ],
+            { text: 'Lowes (Ew!)', correct: false}
+        ] },
 
-        question: "What is Bob's age?",
+       { question: "What is Bob's age?",
         answers: [
             { text: '30', correct: true},
             { text: '70', correct: false},
