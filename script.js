@@ -83,18 +83,62 @@ function clearStatusClass(element) {
 }
 
 const questions = [
-        
-        { question: "What is Bob's favorite hardware store?",
-        answers: [
-            { text: 'Home Depot', correct: true},
-            { text: 'Lowes (Ew!)', correct: false}
-        ] },
 
-       { question: "What is Bob's age?",
-        answers: [
-            { text: '30', correct: true},
-            { text: '70', correct: false},
-            { text: '50 something', correct: false},
-            { text: '65', correct: false}
-        ] }
+    { question: "Inside which HTML element do we put the JavaScript?",
+    answers: [
+        { text: 'javascript', correct: false},
+        { text: 'scripting', correct: false},
+        { text: 'js', correct: false},
+        { text: 'script', correct: true}
+    ]},
+
+   { question: "Where is the correct place to insert a JavaScript?",
+    answers: [
+        { text: 'The <body> section', correct: false},
+        { text: 'the <head> section', correct: false},
+        { text: 'Both the <head> section and the <body> section are correct', correct: true},
+    ]},
+
+    
+    { question: 'The external JavaScript file must contain the <script> tag.',
+    answers: [
+        { text: 'False', correct: false},
+        { text: 'True', correct: true},
+    ]},
+
+    // { question: 'The external JavaScript file must contain the <script> tag.',
+    // answers: [
+
+    // ]},
+
+    // { question: 'The external JavaScript file must contain the <script> tag.',
+    // answers: [
+
+
+    // ]},
+
+    // { question: 'The external JavaScript file must contain the <script> tag.',
+    // answers: [
+
+    // ]},
+
+    // { question: 'The external JavaScript file must contain the <script> tag.',
+    // answers: [
+
+    // ]},
+
+    // { question: 'The external JavaScript file must contain the <script> tag.',
+    // answers: [
+
+    // ]},
+
+    // { question: 'The external JavaScript file must contain the <script> tag.',
+    // answers: [
+
+    // ]},
+
+    //{ question: 'The external JavaScript file must contain the <script> tag.',
+    //answers: [
+
+    //]},
 ]
