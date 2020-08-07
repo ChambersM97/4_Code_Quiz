@@ -12,6 +12,10 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 let shuffledQuestions, currentQuestionIndex
 
 startButton.addEventListener('click', startGame)
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++
+    setNextQuestion()
+})
 
 function startGame() {
     startButton.classList.add('hide')
@@ -55,7 +59,13 @@ function selectAnswer(e) {
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
-    nextButton.classList.remove('hide')
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+        nextButton.classList.remove('hide')
+    } else {
+        startButton.innerText = 'Restart'
+        nextButton.classList.remove('hide')
+    }
+
 }
 
 function setStatusClass(element, correct) {
@@ -79,5 +89,16 @@ const questions = [
             { text: 'Home Depot', correct: true},
             { text: 'Lowes', correct: false}
         ]
-    }
+    },
+
+    {
+        question: "How old is Bob?",
+        answers: [
+        { text: '30', correct: true},
+        { text: '50', correct: false},
+        { text: '70', correct: false},
+        { text: '20', correct: false}
+        ]
+    },
+    
 ]
