@@ -46,6 +46,7 @@ function showQuestion(question) {
 }
 
 function resetState() {
+    clearStatusClass(document.body)
     nextButton.classList.add('hide')
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
@@ -95,7 +96,5 @@ const questions = [
             { text: '70', correct: false},
             { text: '50 something', correct: false},
             { text: '65', correct: false}
-        ],
-        
-    }
+        ] }
 ]
