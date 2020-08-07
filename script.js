@@ -84,6 +84,8 @@ function clearStatusClass(element) {
 
 const questions = [
 
+    //for (var i = 60; ; i- 5 seconds )
+
     { question: "Inside which HTML element do we put the JavaScript?",
     answers: [
         { text: 'javascript', correct: false},
