@@ -106,39 +106,57 @@ const questions = [
         { text: 'True', correct: true},
     ]},
 
-    // { question: 'The external JavaScript file must contain the <script> tag.',
-    // answers: [
+    { question: 'Is JavaScript case-sensitive?',
+    answers: [
+        { text: 'False', correct: false},
+        { text: 'True', correct: true},
 
-    // ]},
+    ]},
 
-    // { question: 'The external JavaScript file must contain the <script> tag.',
-    // answers: [
+    { question: 'Which operator is used to assign a value to a variable?',
+    answers: [
+        { text: '-', correct: false},
+        { text: "*", correct: false},
+        { text: "x", correct: false},
+        { text: "=", correct: true},
 
+    ]},
 
-    // ]},
+    { question: 'Which even occurs when the user clocks on an HTML element?',
+    answers: [
+        { text: 'onclick', correct: true},
+        { text: 'onmouseclick', correct: false},
+        { text: 'onmouseover', correct: false},
+        { text: 'onchange', correct: false},
 
-    // { question: 'The external JavaScript file must contain the <script> tag.',
-    // answers: [
+    ]},
 
-    // ]},
+    { question: 'JavaScript is the same as Java',
+    answers: [
+        { text: 'True', correct: false},
+        { text: 'False', correct: true},
+    ]},
 
-    // { question: 'The external JavaScript file must contain the <script> tag.',
-    // answers: [
+    { question: 'How do you add a comment in a Javascript file?',
+    answers: [
+        { text: '<!--This is a comment-->', correct: false},
+        { text: '//This is a comment', correct: true},
+        { text: 'This is a comment', correct: false},
+    ]},
 
-    // ]},
+    { question: 'How does a for loop start?',
+    answers: [
+        { text: 'while i = 1 to 10', correct: false},
+        { text: 'while (i <= 10; i++)', correct: false},
+        { text: 'while (i <= 10)', correct: true},
+        
 
-    // { question: 'The external JavaScript file must contain the <script> tag.',
-    // answers: [
+    ]},
 
-    // ]},
-
-    // { question: 'The external JavaScript file must contain the <script> tag.',
-    // answers: [
-
-    // ]},
-
-    //{ question: 'The external JavaScript file must contain the <script> tag.',
-    //answers: [
-
-    //]},
+    { question: 'How do you create a function in JavaScript?',
+    answers: [
+        { text: 'function = myFunction()', correct: false},
+        { text: 'function:myFunction()', correct: false},
+        { text: 'function myFunction()', correct: true},
+    ]}
 ]
