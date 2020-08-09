@@ -1,4 +1,4 @@
-// I need to add a time
+// I need to add a timer
 
 // I also need to add something that substracts from the timer
-// score if the answer is incorrect
+// if the answer is incorrect
