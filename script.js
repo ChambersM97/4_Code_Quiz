@@ -74,11 +74,12 @@ function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
         element.classList.add('correct')
-        totalScore = totalScore + 1
+ 
     } else {
         element.classList.add('wrong')
     }
 }
+
 
 function clearStatusClass(element) {
     element.classList.remove('correct')
@@ -105,7 +106,7 @@ const questions = [
     ]},
 
     
-    { question: 'The external JavaScript file must contain the <script> tag.',
+    { question: 'The external JavaScript file must contain the <script>  tag.',
     answers: [
         { text: 'False', correct: false},
         { text: 'True', correct: true},

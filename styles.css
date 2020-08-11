@@ -9,6 +9,12 @@
     --hue-correct: 145;
 }
 
+
+header {
+    padding: 15px;
+} 
+
+
 body {
     --hue: var(--hue-neutral);
     padding: 0;
