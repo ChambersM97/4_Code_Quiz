@@ -10,10 +10,6 @@
 }
 
 
-header {
-    padding: 10%;
-} 
-
 
 body {
     --hue: var(--hue-neutral);
